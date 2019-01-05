@@ -17,7 +17,7 @@ EOS
 grep script catalog2.html | grep author > script.html
 
 # Let's get all the variable declaration and save it to the vars.js file:
-sed script.html -c <<EOS
+ex script.html -c <<EOS
 :s/;var/;\\
 var/g
 :w vars.js
