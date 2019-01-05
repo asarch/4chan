@@ -20,7 +20,7 @@ grep script catalog2.html | grep author > script.html
 sed script.html -c <<EOS
 :s/;var/;\\
 var/g
-:w var.js
+:w vars.js
 EOS
 
 # Let's look for the declaration of the object catalog and save the output to catalog.js:
